@@ -1,1 +1,8 @@
+services:
+  - type: web
+    name: alphaslabs-ebay-webhook
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn webhook:app
+    plan: free
 
